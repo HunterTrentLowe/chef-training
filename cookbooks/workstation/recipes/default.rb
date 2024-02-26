@@ -4,5 +4,5 @@
 log "Welcome to Chef Infra Client, #{node['example']['name']}!" do
   level :info
 end
-
+include_recipe 'workstation::hello'
 # For more information, see the documentation: https://docs.chef.io/recipes

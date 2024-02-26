@@ -1,0 +1,2 @@
+#run the default.rb in the workstation cookbook folder
+sudo chef-client --local-mode -r "recipe[workstation::default]"
