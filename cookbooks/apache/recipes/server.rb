@@ -1,12 +1,9 @@
-package 'httpd'
+package node['apache']['package_name'] do
+  action :install
+end
 
-file '/var/www/html/index.html' do
-  content "<H1>Hello, world!<H1>
-   <h2>PLATFORM: #{node['platform']}</h2>
-   <h2>HOSTNAME: #{node['hostname']}</h2>
-   <h2>MEMORY: #{node['memory']['total']}</h2>
-   <h2>CPU Mhz: #{node['cpu']['0']['mhz']}</h2>
-"
+template '/var/www/html/index.html' do
+  source 'index.html.erb'
 end
 
 service 'httpd' do
