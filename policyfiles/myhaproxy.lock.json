@@ -1,5 +1,5 @@
 {
-  "revision_id": "4f050c4d094c801f2f7f1bb8c71ac39afacc5d23f0382c3b71c5c68b45611a62",
+  "revision_id": "43ed8524e3879c791043585186dae7f310938fbc9105a7d0eaa3de3cf20d2cc0",
   "name": "myhaproxy",
   "run_list": [
     "recipe[myhaproxy::default]"
@@ -20,15 +20,15 @@
       }
     },
     "myhaproxy": {
-      "version": "0.1.0",
-      "identifier": "16a9369914af3afdaa9e05dbb715eb49fed02c53",
-      "dotted_decimal_identifier": "6378501449232186.71400764787635989.258703040195667",
+      "version": "1.1.0",
+      "identifier": "a43829bab007a12b87eafa7761425335a8b36dd8",
+      "dotted_decimal_identifier": "46223648057460641.12252867292782914.91489928703448",
       "source": "../cookbooks/myhaproxy",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "fa8c64ee902d8ea58d913d00b79f754f91a8d47d",
+        "revision": "7a5e3a1798090c56c837efb7905d2c5f71d46cdc",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -79,7 +79,7 @@
           ">= 0.0.0"
         ]
       ],
-      "myhaproxy (0.1.0)": [
+      "myhaproxy (1.1.0)": [
         [
           "haproxy",
           "~> 12.2.3"
